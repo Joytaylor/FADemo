@@ -4,28 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu">
 
-    <LinearLayout
+    tools:context=".Menu">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+    <ImageView
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layeredbllue"
+        >
+    </ImageView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dirtground"
+        android:padding="0dp">
+
+
+    </ImageView>
+</RelativeLayout>
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
         <TextView
             android:id="@+id/MenuTitle"
-            android:layout_width="549dp"
+            android:paddingTop="10dp"
+            android:layout_width="700sp"
             android:layout_height="121dp"
-            android:autoText="true"
-            android:capitalize="words"
+            android:fontFamily="@font/play"
+            android:layout_gravity="center"
             android:text="@string/game_name"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:autoSizeTextType="uniform" />
+<GridLayout
+    android:layout_width="match_parent"
 
-        <Button
-            android:id="@+id/Start"
-            android:layout_width="229dp"
-            android:layout_height="115dp"
-            android:text="Start" />
-    </LinearLayout>
+
+    android:layout_gravity="center">
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/bunnybasesprite">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="229dp"
+        android:layout_height="115dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        app:autoSizeTextType="uniform"
+        android:layout_gravity="center"
+        android:text="Start"
+        android:textFontWeight="99" />
+
+    <ImageView
+        android:layout_width="202dp"
+        android:layout_height="286dp"
+
+        android:src="@drawable/carrot">
+
+    </ImageView>
+    </GridLayout>
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
