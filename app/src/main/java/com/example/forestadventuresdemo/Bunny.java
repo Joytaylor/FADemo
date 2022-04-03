@@ -7,6 +7,7 @@ import static com.example.forestadventuresdemo.LevelView.screenY;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Rect;
 
 public class Bunny {
     int x, y, width , height;
@@ -34,5 +35,9 @@ public class Bunny {
     }
     public void setDebounce(){
         stepCount++;
+    }
+    Rect getCollisionShape () {
+
+        return new Rect(x, y, x + width, y + height);
     }
 }

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ForestAdventuresDemo</string>
     <string name="game_name"> Forest Adventures</string>
+    <string name="highScore"> High Score: 0</string>
 <string name="subtitle"> The Bunny Hop </string>
 
 </resources>
