@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Level extends AppCompatActivity {
-    public static float screenRatioX, screenRatioY;
+   // public static float screenRatioX, screenRatioY;
     private LevelView levelView;
 
     @Override

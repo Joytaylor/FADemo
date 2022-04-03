@@ -6,8 +6,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.Rect;
 
 import java.util.Vector;
-import static com.example.forestadventuresdemo.Level.screenRatioX;
-import static com.example.forestadventuresdemo.Level.screenRatioY;
+import static com.example.forestadventuresdemo.LevelView.screenRatioX;
+import static com.example.forestadventuresdemo.LevelView.screenRatioY;
 public class Player {
     public int speed = 10;
     int x, y, width, height = 0;
